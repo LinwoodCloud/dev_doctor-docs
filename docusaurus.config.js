@@ -20,19 +20,25 @@ module.exports = {
   projectName: 'dev_doctor-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Facebook Project',
+      title: 'Dev-Doctor',
       logo: {
         alt: 'My Facebook Project Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
+          to: 'docs',
+          activeBaseRegex: "docs$|docs\\/(backend)",
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {
+          to: 'docs/api',
+          activeBasePath: "docs/api",
+          label: 'API',
+          position: 'left',
+        },
+        {href: 'https://linwood.tk/blog', label: 'Blog', position: 'left'},
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://github.com/facebook/docusaurus',
@@ -129,15 +135,41 @@ module.exports = {
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+      },
+    ],
+  ],
+  
+  plugins: [
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString',
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/docusaurus.png',
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json', // your PWA manifest
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(37, 194, 160)',
+          },
+        ],
       },
     ],
   ],

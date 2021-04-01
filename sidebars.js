@@ -8,8 +8,34 @@
  */
 
 module.exports = {
-  someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
-  },
+  'docs': [
+    'overview',
+    {
+      type: 'category',
+      label: 'Backend',
+      items: [
+        'backend/overview',
+        'backend/own',
+        'backend/collection',
+      ]
+    },
+    'privacypolicy'
+  ],
+  'api': [
+    'api/main',
+    'api/course',
+    'api/part',
+
+    {
+      type: 'category',
+      label: 'Item',
+      collapsed: false,
+      items: [
+        'api/item/overview',
+        'api/item/text',
+        'api/item/video',
+        'api/item/quiz'
+      ]
+    }
+  ]
 };
