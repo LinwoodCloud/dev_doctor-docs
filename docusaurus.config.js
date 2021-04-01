@@ -11,13 +11,13 @@
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://docs.dev-doctor.cf',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'LinwoodCloud', // Usually your GitHub org/user name.
+  projectName: 'dev_doctor-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'My Facebook Project',
