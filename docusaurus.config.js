@@ -39,6 +39,18 @@ module.exports = {
           position: 'left',
         },
         {href: 'https://linwood.tk/blog', label: 'Blog', position: 'left'},
+        {
+          type: 'docsVersionDropdown',
+
+          position: 'right',
+          // Add additional dropdown items at the beginning/end of the dropdown.
+          dropdownItemsBefore: [],
+          dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+          // Do not add the link active class when browsing docs.
+          dropdownActiveClassDisabled: true,
+          docsPluginId: 'default',
+        },
+
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://github.com/facebook/docusaurus',
