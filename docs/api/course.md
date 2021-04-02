@@ -7,7 +7,7 @@ title: Course
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs defaultValue="json" values={[
+<Tabs defaultValue="json" groupId="type" values={[
   { label: 'JSON', value: 'json', },
   { label: 'YAML', value: 'yaml', },
 ]}>
@@ -111,17 +111,15 @@ parts:
 
 ## Options
 
-| Name          |              Type              | Required | Since |                                                                                       Description |
-| :------------ | :----------------------------: | :------: | :---: | ------------------------------------------------------------------------------------------------: |
-| name          |             String             |   true   | 0.1.0 |              The name of the course. It will shown in the courses list and in the course details. |
-| description   |             String             |  false   | 0.1.0 |    The description of the course which can be seen in the list of the courses and the intro page. |
-| body          |       String (Markdown)        |   true   | 0.1.0 |                                                      This will display on the course details page |
-| icon          | String (png, jpg, svg) or null |  false   | 0.1.0 | The icon will show up in the course list left to the title and on the details page of the course. |
-| lang          |     String (Language tag)      |  false   | 1.1.0 |                                                                The language of the current course |
-| author        |             String             |   true   | 0.1.0 |                              The author. It will appear on the front page and on the courses list |
-| author_url    |             String             |  false   | 1.1.0 |                                   The url which will be opened when the user clicks on the author |
-| author_avatar |             String             |  false   | 1.1.0 |                                 The author avatar which will be displayed left to the author name |
-| category      |         Array<String\>         |  false   | 1.2.0 |                        The current category of the course. You can see the categories in the list |
-| private       |            Boolean             |  false   | 1.2.0 |                                                       Controls if the course is shown in the list |
-| parts         |         Array<String\>         |   true   | 0.1.0 |                                       The course contents. This are the folder names of the parts |
-| support_url   |             String             |  false   | 1.1.2 |                   The current url where you can get help. This will override the main support url |
+| Name        |              Type              | Required |                                                                                       Description |
+| :---------- | :----------------------------: | :------: | ------------------------------------------------------------------------------------------------: |
+| name        |             String             |   true   |              The name of the course. It will shown in the courses list and in the course details. |
+| description |             String             |  false   |    The description of the course which can be seen in the list of the courses and the intro page. |
+| body        |       String (Markdown)        |   true   |                                                      This will display on the course details page |
+| icon        | String (png, jpg, svg) or null |  false   | The icon will show up in the course list left to the title and on the details page of the course. |
+| lang        |     String (Language tag)      |  false   |                                                                The language of the current course |
+| author      |      [Author](author.md)       |  false   |                              The author. It will appear on the front page and on the courses list |
+| category    |         Array<String\>         |  false   |                        The current category of the course. You can see the categories in the list |
+| private     |            Boolean             |  false   |                                                       Controls if the course is shown in the list |
+| parts       |         Array<String\>         |   true   |                                       The course contents. This are the folder names of the parts |
+| support_url |             String             |  false   |                   The current url where you can get help. This will override the main support url |

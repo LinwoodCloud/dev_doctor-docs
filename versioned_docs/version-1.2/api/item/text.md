@@ -11,7 +11,7 @@ In the items option in the [part](../part)
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs defaultValue="json" values={[
+<Tabs defaultValue="json" groupId="type" values={[
   { label: 'JSON', value: 'json', },
   { label: 'YAML', value: 'yaml', },
 ]}>

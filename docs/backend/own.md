@@ -12,3 +12,5 @@ sidebar_label: Own backend
 7. On github pages, the default domain on organsiation is https://ORGANISATION.github.io/REPOSITORY or on users is https://USER.github.io/REPOSITORY
 8. Test your site by opening your website.
 9. Submit your project like [here](collection/#submit-a-backend)
+
+Don't forget to add `"api-version": 9` to every file!

@@ -11,7 +11,7 @@ In the items option in the [part](../part)
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs defaultValue="json" values={[
+<Tabs defaultValue="json" groupId="type" values={[
   { label: 'JSON', value: 'json', },
   { label: 'YAML', value: 'yaml', },
 ]}>
@@ -40,6 +40,6 @@ text: >
 
 ## Options
 
-| Name |       Type        | Required | Since |                                                                  Description |
-| :--- | :---------------: | :------: | :---: | ---------------------------------------------------------------------------: |
-| text | String (Markdown) |   true   | 0.1.0 | The current text which will be displayed as content of the current part item |
+| Name |       Type        | Required |                                                                  Description |
+| :--- | :---------------: | :------: | ---------------------------------------------------------------------------: |
+| text | String (Markdown) |   true   | The current text which will be displayed as content of the current part item |

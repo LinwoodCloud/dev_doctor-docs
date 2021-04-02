@@ -27,16 +27,16 @@ module.exports = {
       },
       items: [
         {
+          type: 'docsVersion',
           to: 'docs',
-          activeBaseRegex: "docs$|docs\\/(backend)",
           label: 'Docs',
-          position: 'left',
+          position: 'left'
         },
         {
+          type: 'docsVersion',
           to: 'docs/api',
-          activeBasePath: "docs/api",
           label: 'API',
-          position: 'left',
+          position: 'left'
         },
         {href: 'https://linwood.tk/blog', label: 'Blog', position: 'left'},
         {
@@ -47,8 +47,7 @@ module.exports = {
           dropdownItemsBefore: [],
           dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
           // Do not add the link active class when browsing docs.
-          dropdownActiveClassDisabled: true,
-          docsPluginId: 'default',
+          dropdownActiveClassDisabled: true
         },
 
         // Please keep GitHub link to the right for consistency.
@@ -134,7 +133,7 @@ module.exports = {
         href: 'https://opensource.facebook.com',
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} LinwoodCloud.`,
     },
   },
   presets: [

@@ -22,6 +22,7 @@ module.exports = {
     'privacypolicy'
   ],
   'api': [
+    'api/migrating',
     'api/main',
     'api/course',
     'api/part',

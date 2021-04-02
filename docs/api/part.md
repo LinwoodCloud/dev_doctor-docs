@@ -6,7 +6,7 @@ title: Part
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs defaultValue="json" values={[
+<Tabs defaultValue="json" groupId="type" values={[
   { label: 'JSON', value: 'json', },
   { label: 'YAML', value: 'yaml', },
 ]}>
@@ -143,9 +143,9 @@ items:
 
 ## Options
 
-| Name        |             Type              | Required | Since |                                                                                     Description |
-| :---------- | :---------------------------: | :------: | :---: | ----------------------------------------------------------------------------------------------: |
-| name        |            String             |   true   |  0.1  |                 The name of the current part. It will show up in the app bar and in the drawer. |
-| description |            String             |  false   |  1.1  |                                                               This will be shown in the drawer. |
-| assets      |        Array<String\>         |   true   |  0.1  | The assets (like images, videos, ...) filee names in the assets folder in the current directory |
-| items       | Array<[Item](item/overview)\> |   true   |  0.1  |                                                            A list of items in the current part. |
+| Name        |             Type              | Required |                                                                                     Description |
+| :---------- | :---------------------------: | :------: | ----------------------------------------------------------------------------------------------: |
+| name        |            String             |   true   |                 The name of the current part. It will show up in the app bar and in the drawer. |
+| description |            String             |  false   |                                                               This will be shown in the drawer. |
+| assets      |        Array<String\>         |   true   | The assets (like images, videos, ...) filee names in the assets folder in the current directory |
+| items       | Array<[Item](item/overview)\> |   true   |                                                            A list of items in the current part. |

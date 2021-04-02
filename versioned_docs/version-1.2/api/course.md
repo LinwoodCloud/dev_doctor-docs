@@ -7,7 +7,7 @@ title: Course
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<Tabs defaultValue="json" values={[
+<Tabs defaultValue="json" groupId="type" values={[
   { label: 'JSON', value: 'json', },
   { label: 'YAML', value: 'yaml', },
 ]}>
