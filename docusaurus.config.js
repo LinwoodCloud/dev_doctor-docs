@@ -28,13 +28,13 @@ module.exports = {
       items: [
         {
           type: 'docsVersion',
-          to: 'docs',
+          to: '/',
           label: 'Docs',
           position: 'left'
         },
         {
           type: 'docsVersion',
-          to: 'docs/api',
+          to: 'api',
           label: 'API',
           position: 'left'
         },
@@ -129,7 +129,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          path: '/',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
