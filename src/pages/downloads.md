@@ -1,7 +1,10 @@
 ---
 title: Downloads
 ---
+
 # Downloads
+
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/LinwoodCloud/dev_doctor?style=for-the-badge)
 
 <div className="row margin-bottom--lg">
 <div class="dropdown dropdown--hoverable">
@@ -71,4 +74,5 @@ title: Downloads
 
 - [Changelog](https://github.com/LinwoodCloud/dev_doctor/blob/develop/CHANGELOG.md)
 - [Older releases](https://github.com/LinwoodCloud/dev_doctor/releases)
-- [Latest release](https://github.com/LinwoodCloud/dev_doctor/releases)
+- [Latest release](https://github.com/LinwoodCloud/dev_doctor/releases/latest)
+- [Support](https://discord.linwood.tk)
