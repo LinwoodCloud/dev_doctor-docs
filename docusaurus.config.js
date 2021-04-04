@@ -9,8 +9,8 @@
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'Dev-Doctor Docs',
+  tagline: 'The documentation to the dev-doctor app',
   url: 'https://docs.dev-doctor.cf',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -38,6 +38,11 @@ module.exports = {
           label: 'API',
           position: 'left'
         },
+        {
+          to: 'downloads',
+          label: 'Downloads',
+          position: 'left'
+        },
         {href: 'https://linwood.tk/blog', label: 'Blog', position: 'left'},
         {
           type: 'docsVersionDropdown',
@@ -62,64 +67,53 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Learn',
-          items: [
-          ],
-        },
-        {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Discord',
+              href: 'https://discord.linwood.tk',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://twitter.com/LinwoodCloud',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Source code',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'App',
+              href: 'https://github.com/LinwoodCloud/dev_doctor.git',
             },
+            {
+              label: 'Documentation',
+              href: 'https://github.com/LinwoodCloud/dev_doctor-docs.git',
+            },
+            {
+              label: 'Collection',
+              href: 'https://github.com/LinwoodCloud/dev_doctor-collection',
+            },
+            {
+              label: 'Backend',
+              href: 'https://github.com/LinwoodCloud/dev_doctor-backend',
+            }
           ],
         },
         {
           title: 'Legal',
-          // Please do not remove the privacy and terms, it's a legal requirement.
           items: [
             {
-              label: 'Privacy',
-              href: 'https://opensource.facebook.com/legal/privacy/',
+              label: 'Imprint',
+              to: 'https://codedoctor.tk/impress',
             },
             {
-              label: 'Terms',
-              href: 'https://opensource.facebook.com/legal/terms/',
-            },
-            {
-              label: 'Data Policy',
-              href: 'https://opensource.facebook.com/legal/data-policy/',
-            },
-            {
-              label: 'Cookie Policy',
-              href: 'https://opensource.facebook.com/legal/cookie-policy/',
+              label: 'Privacy Policy',
+              href: 'https://codedoctor.tk/privacy',
             },
           ],
-        },
+        }
       ],
-      logo: {
-        alt: 'Facebook Open Source Logo',
-        src: 'img/oss_logo.png',
-        href: 'https://opensource.facebook.com',
-      },
       // Please do not remove the credits, help to publicize Docusaurus :)
       copyright: `Copyright © ${new Date().getFullYear()} LinwoodCloud.`,
     },
