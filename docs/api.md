@@ -1,6 +1,6 @@
 ---
 title: Main
-slug: /api
+id: api
 ---
 ## Example
 

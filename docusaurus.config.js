@@ -27,14 +27,14 @@ module.exports = {
       },
       items: [
         {
-          type: 'docsVersion',
-          to: '/',
+          type: 'doc',
+          docId: 'introduction',
           label: 'Docs',
           position: 'left'
         },
         {
-          type: 'docsVersion',
-          to: 'api',
+          type: 'doc',
+          docId: 'api',
           label: 'API',
           position: 'left'
         },

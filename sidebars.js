@@ -9,7 +9,7 @@
 
 module.exports = {
   'docs': [
-    'overview',
+    'introduction',
     {
       type: 'category',
       label: 'Backend',
@@ -23,7 +23,7 @@ module.exports = {
   ],
   'api': [
     'api/migrating',
-    'api/main',
+    'api',
     'api/course',
     'api/part',
 

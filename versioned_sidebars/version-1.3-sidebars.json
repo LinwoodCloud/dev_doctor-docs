@@ -1,8 +1,8 @@
 {
-  "version-1.2/docs": [
+  "version-1.3/docs": [
     {
       "type": "doc",
-      "id": "version-1.2/introduction"
+      "id": "version-1.3/introduction"
     },
     {
       "collapsed": true,
@@ -11,35 +11,39 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-1.2/backend/overview"
+          "id": "version-1.3/backend/overview"
         },
         {
           "type": "doc",
-          "id": "version-1.2/backend/own"
+          "id": "version-1.3/backend/own"
         },
         {
           "type": "doc",
-          "id": "version-1.2/backend/collection"
+          "id": "version-1.3/backend/collection"
         }
       ]
     },
     {
       "type": "doc",
-      "id": "version-1.2/privacypolicy"
+      "id": "version-1.3/privacypolicy"
     }
   ],
-  "version-1.2/api": [
+  "version-1.3/api": [
     {
       "type": "doc",
-      "id": "version-1.2/api"
+      "id": "version-1.3/api/migrating"
     },
     {
       "type": "doc",
-      "id": "version-1.2/api/course"
+      "id": "version-1.3/api"
     },
     {
       "type": "doc",
-      "id": "version-1.2/api/part"
+      "id": "version-1.3/api/course"
+    },
+    {
+      "type": "doc",
+      "id": "version-1.3/api/part"
     },
     {
       "collapsed": false,
@@ -48,19 +52,19 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-1.2/api/item/overview"
+          "id": "version-1.3/api/item/overview"
         },
         {
           "type": "doc",
-          "id": "version-1.2/api/item/text"
+          "id": "version-1.3/api/item/text"
         },
         {
           "type": "doc",
-          "id": "version-1.2/api/item/video"
+          "id": "version-1.3/api/item/video"
         },
         {
           "type": "doc",
-          "id": "version-1.2/api/item/quiz"
+          "id": "version-1.3/api/item/quiz"
         }
       ]
     }
