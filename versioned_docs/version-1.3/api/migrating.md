@@ -15,7 +15,7 @@ It's recommend to use the [automatic](#automatic) method.
 
 :::
 
-Add `"api-version": 9` to the [main](main.md), [course](course.md) and [course part](part.md).
+Add `"api-version": 9` to the [main](../api.md), [course](course.md) and [course part](part.md).
 
 ## Author
 
